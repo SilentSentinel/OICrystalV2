@@ -1,0 +1,20 @@
+	db  65, 130,  60,  75,  75,  60 ; 465 BST
+	;   hp  atk  def  spd  sat  sdf
+
+	db DARK, DARK ; type
+	db 30 ; catch rate
+	db 167 ; base exp
+	db NO_ITEM ; item 1
+	db NO_ITEM ; item 2
+	dn GENDER_F50, 4 ; gender ratio, step cycles to hatch
+	INCBIN "gfx/pokemon/absol/front.dimensions"
+	abilities_for ABSOL, PRESSURE, SUPER_LUCK, JUSTIFIED
+	db GROWTH_MEDIUM_SLOW ; growth rate
+	dn EGG_GROUND, EGG_GROUND ; egg groups
+
+	ev_yield   0,   2,   0,   0,   0,   0
+	;         hp  atk  def  spd  sat  sdf
+
+	; tm/hm learnset
+	tmhm CURSE, CALM_MIND, HIDDEN_POWER, SUNNY_DAY, HONE_CLAWS, ICE_BEAM, BLIZZARD, HYPER_BEAM, PROTECT, RAIN_DANCE, THUNDERBOLT, THUNDER, RETURN, SHADOW_BALL, DOUBLE_TEAM, FLAMETHROWER, SANDSTORM, FIRE_BLAST, SWIFT, AERIAL_ACE, SUBSTITUTE, FACADE, REST, ATTRACT, THIEF, ROCK_SLIDE, FALSE_SWIPE, X_SCISSOR, DARK_PULSE, SHADOW_CLAW, GIGA_IMPACT, STONE_EDGE, THUNDER_WAVE, SWORDS_DANCE, CUT, STRENGTH, BODY_SLAM, DOUBLE_EDGE, DREAM_EATER, ENDURE, HEADBUTT, KNOCK_OFF, SLEEP_TALK, SUCKER_PUNCH, SWAGGER, ZEN_HEADBUTT
+	; end

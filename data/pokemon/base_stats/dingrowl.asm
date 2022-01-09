@@ -1,0 +1,20 @@
+	db  55,  95,  65,  90, 100,  65 ; 470 BST
+	;   hp  atk  def  spd  sat  sdf
+
+	db GROUND, NORMAL ; type
+	db 170 ; catch rate
+	db 146 ; base exp
+	db NO_ITEM ; item 1
+	db KEE_BERRY ; item 2
+	dn GENDER_F50, 3 ; gender ratio, step cycles to hatch
+	INCBIN "gfx/pokemon/dingrowl/front.dimensions"
+	abilities_for DINGROWL, ANTICIPATION, VITAL_SPIRIT, SAND_RUSH
+	db GROWTH_FAST ; growth rate
+	dn EGG_GROUND, EGG_GROUND ; egg groups
+
+	ev_yield   0,   0,   0,   1,   1,   0
+	;         hp  atk  def  spd  sat  sdf
+
+	; tm/hm learnset
+	tmhm CURSE, ROAR, HIDDEN_POWER, SUNNY_DAY, HONE_CLAWS, HYPER_BEAM, PROTECT, BULLDOZE, IRON_TAIL, EARTHQUAKE, RETURN, DIG, ROCK_SMASH, DOUBLE_TEAM, SANDSTORM, AERIAL_ACE, SUBSTITUTE, FACADE, REST, ATTRACT, THIEF, ROCK_SLIDE, FALSE_SWIPE, X_SCISSOR, WILD_CHARGE, SHADOW_CLAW, POISON_JAB, GIGA_IMPACT, STONE_EDGE, SWORDS_DANCE, CUT, STRENGTH, AQUA_TAIL, BODY_SLAM, COUNTER, DEFENSE_CURL, DOUBLE_EDGE, EARTH_POWER, ENDURE, HEADBUTT, HYPER_VOICE, THUNDER_TAIL, SLEEP_TALK, SUCKER_PUNCH, SWAGGER, DUST_DEVIL, ZEN_HEADBUTT
+	; end

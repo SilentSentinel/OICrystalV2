@@ -1,0 +1,20 @@
+	db  75, 115,  80, 115,  80,  75 ; 540 BST
+	;   hp  atk  def  spd  sat  sdf
+
+	db BUG, DRAGON ; type
+	db 45 ; catch rate
+	db 186 ; base exp
+	db NO_ITEM ; item 1
+	db SHED_SHELL ; item 2
+	dn GENDER_F50, 4 ; gender ratio, step cycles to hatch
+	INCBIN "gfx/pokemon/centilisk/front.dimensions"
+	abilities_for CENTILISK, INTIMIDATE, SHED_SKIN, GIANT_TAIL
+	db GROWTH_MEDIUM_SLOW ; growth rate
+	dn EGG_BUG, EGG_DRAGON ; egg groups
+
+	ev_yield   0,   1,   0,   1,   0,   0
+	;         hp  atk  def  spd  sat  sdf
+
+	; tm/hm learnset
+	tmhm SOUL_BIND, DRAGON_CLAW, CURSE, ROAR, TOXIC, VENOSHOCK, HIDDEN_POWER, SUNNY_DAY, HONE_CLAWS, HYPER_BEAM, PROTECT, BULLDOZE, IRON_TAIL, EARTHQUAKE, RETURN, DIG, ROCK_SMASH, DOUBLE_TEAM, SLUDGE_BOMB, SWIFT, AERIAL_ACE, SUBSTITUTE, FACADE, REST, ATTRACT, ROCK_SLIDE, LEECH_LIFE, FALSE_SWIPE, X_SCISSOR, DRAGON_PULSE, SHADOW_CLAW, POISON_JAB, GIGA_IMPACT, U_TURN, STONE_EDGE, GYRO_BALL, SWORDS_DANCE, CUT, STRENGTH, AQUA_TAIL, BODY_SLAM, DEFENSE_CURL, DOUBLE_EDGE, ENDURE, ROLLOUT, THUNDER_TAIL, SLEEP_TALK, SWAGGER
+	; end

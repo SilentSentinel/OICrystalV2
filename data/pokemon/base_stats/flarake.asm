@@ -1,0 +1,20 @@
+	db  90, 115,  75,  90, 100,  70 ; 540 BST
+	;   hp  atk  def  spd  sat  sdf
+
+	db FIRE, DRAGON ; type
+	db 45 ; catch rate
+	db 203 ; base exp
+	db NO_ITEM ; item 1
+	db NO_ITEM ; item 2
+	dn GENDER_F50, 5 ; gender ratio, step cycles to hatch
+	INCBIN "gfx/pokemon/flarake/front.dimensions"
+	abilities_for FLARAKE, FLASH_FIRE, FLASH_FIRE, DEFIANT
+	db GROWTH_MEDIUM_SLOW ; growth rate
+	dn EGG_DRAGON, EGG_DRAGON ; egg groups
+
+	ev_yield   0,   2,   0,   0,   1,   0
+	;         hp  atk  def  spd  sat  sdf
+
+	; tm/hm learnset
+	tmhm DRAGON_CLAW, CURSE, HIDDEN_POWER, SUNNY_DAY, HONE_CLAWS, ICE_BEAM, BLIZZARD, HYPER_BEAM, PROTECT, RAIN_DANCE, BULLDOZE, SOLAR_BEAM, IRON_TAIL, EARTHQUAKE, RETURN, DOUBLE_TEAM, FLAMETHROWER, FIRE_BLAST, SUBSTITUTE, FACADE, FLAME_CHARGE, REST, ATTRACT, ROCK_SLIDE, SCALD, DRAGON_PULSE, WILL_O_WISP, WATER_PULSE, SHADOW_CLAW, GIGA_IMPACT, FLASH, STONE_EDGE, CUT, SURF, WATERFALL, AQUA_TAIL, BODY_SLAM, CHARM, DEFENSE_CURL, DOUBLE_EDGE, ENDURE, ICY_WIND, THUNDER_TAIL, SLEEP_TALK, SWAGGER, TRICK
+	; end

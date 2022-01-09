@@ -1,0 +1,20 @@
+	db 115, 110,  90,  95,  60,  70 ; 540 BST
+	;   hp  atk  def  spd  sat  sdf
+
+	db FAIRY, FAIRY ; type
+	db 45 ; catch rate
+	db 191 ; base exp
+	db NO_ITEM ; item 1
+	db NO_ITEM ; item 2
+	dn GENDER_F100, 3 ; gender ratio, step cycles to hatch
+	INCBIN "gfx/pokemon/apollyon/front.dimensions"
+	abilities_for APOLLYON, GUTS, LIMBER, RIVALRY
+	db GROWTH_SLOW ; growth rate
+	dn EGG_GROUND, EGG_GROUND ; egg groups
+
+	ev_yield   1,   1,   0,   0,   0,   0
+	;         hp  atk  def  spd  sat  sdf
+
+	; tm/hm learnset
+	tmhm CURSE, ROAR, HIDDEN_POWER, SUNNY_DAY, HONE_CLAWS, ICE_BEAM, BLIZZARD, HYPER_BEAM, LIGHT_SCREEN, PROTECT, RAIN_DANCE, SOLAR_BEAM, IRON_TAIL, THUNDERBOLT, THUNDER, EARTHQUAKE, RETURN, DIG, ROCK_SMASH, DOUBLE_TEAM, REFLECT, FLASH_CANNON, FLAMETHROWER, FIRE_BLAST, SWIFT, SUBSTITUTE, FACADE, REST, ATTRACT, ROCK_SLIDE, DAZZLINGLEAM, WILD_CHARGE, FLASH, STONE_EDGE, THUNDER_WAVE, CUT, STRENGTH, AGILITY, BODY_SLAM, CHARM, DEFENSE_CURL, DOUBLE_EDGE, ENDURE, HEADBUTT, HYPER_VOICE, IRON_HEAD, PAY_DAY, SLEEP_TALK, SWAGGER, ZEN_HEADBUTT
+	; end

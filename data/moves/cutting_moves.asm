@@ -1,0 +1,14 @@
+CuttingMoves:
+	db AIR_SLASH
+	db CUT
+	db DRAGON_CLAW
+	db FALSE_SWIPE
+	db FURY_STRIKES
+	db METAL_CLAW
+	db NIGHT_SLASH
+	db PYRO_REND
+	db SCRATCH
+	db SHADOW_CLAW
+	db SLASH
+	db X_SCISSOR
+	db -1

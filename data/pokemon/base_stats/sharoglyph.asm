@@ -1,0 +1,20 @@
+	db  75,  70,  70,  99, 131,  85 ; 530 BST
+	;   hp  atk  def  spd  sat  sdf
+
+	db GROUND, GROUND ; type
+	db 90 ; catch rate
+	db 204 ; base exp
+	db NO_ITEM ; item 1
+	db SOFT_SAND ; item 2
+	dn GENDER_F50, 3 ; gender ratio, step cycles to hatch
+	INCBIN "gfx/pokemon/sharoglyph/front.dimensions"
+	abilities_for SHAROGLYPH, SAND_STREAM, SAND_VEIL, SAND_RUSH
+	db GROWTH_MEDIUM_SLOW ; growth rate
+	dn EGG_MONSTER, EGG_MONSTER ; egg groups
+
+	ev_yield   0,   0,   0,   0,   2,   0
+	;         hp  atk  def  spd  sat  sdf
+
+	; tm/hm learnset
+	tmhm DRAGON_CLAW, CURSE, CALM_MIND, ROAR, HIDDEN_POWER, HONE_CLAWS, HYPER_BEAM, PROTECT, SAFEGUARD, BULLDOZE, IRON_TAIL, EARTHQUAKE, RETURN, DIG, PSYCHIC, SHADOW_BALL, ROCK_SMASH, DOUBLE_TEAM, FLAMETHROWER, SANDSTORM, FIRE_BLAST, SUBSTITUTE, FACADE, REST, ATTRACT, ROCK_SLIDE, DARK_PULSE, DRAGON_PULSE, SHADOW_CLAW, GIGA_IMPACT, STONE_EDGE, STRENGTH, AQUA_TAIL, BODY_SLAM, DOUBLE_EDGE, EARTH_POWER, ENDURE, HEADBUTT, IRON_HEAD, SLEEP_TALK, SWAGGER, DUST_DEVIL, ZEN_HEADBUTT
+	; end

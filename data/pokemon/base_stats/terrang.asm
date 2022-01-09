@@ -1,0 +1,20 @@
+	db  85,  95, 105,  60,  80,  75 ; 500 BST
+	;   hp  atk  def  spd  sat  sdf
+
+	db GRASS, GROUND ; type
+	db 75 ; catch rate
+	db 177 ; base exp
+	db NO_ITEM ; item 1
+	db NO_ITEM ; item 2
+	dn GENDER_F50, 2 ; gender ratio, step cycles to hatch
+	INCBIN "gfx/pokemon/terrang/front.dimensions"
+	abilities_for TERRANG, OBLIVIOUS, INTIMIDATE, GORILLA_TACTICS
+	db GROWTH_FAST ; growth rate
+	dn EGG_GROUND, EGG_HUMANSHAPE ; egg groups
+
+	ev_yield   0,   1,   1,   0,   0,   0
+	;         hp  atk  def  spd  sat  sdf
+
+	; tm/hm learnset
+	tmhm CURSE, ROAR, BULK_UP, HIDDEN_POWER, SUNNY_DAY, HYPER_BEAM, PROTECT, GIGA_DRAIN, BULLDOZE, SOLAR_BEAM, EARTHQUAKE, RETURN, DIG, ROCK_SMASH, DOUBLE_TEAM, REFLECT, SANDSTORM, SUBSTITUTE, FACADE, REST, ATTRACT, THIEF, ROCK_SLIDE, ENERGY_BALL, GIGA_IMPACT, STONE_EDGE, SWORDS_DANCE, CUT, STRENGTH, BATON_PASS, BODY_SLAM, COUNTER, DOUBLE_EDGE, EARTH_POWER, ENDURE, HEADBUTT, HYPER_VOICE, IRON_HEAD, KNOCK_OFF, PAY_DAY, SEED_BOMB, SLEEP_TALK, SUCKER_PUNCH, SWAGGER, THUNDERPUNCH, TRICK, DUST_DEVIL
+	; end

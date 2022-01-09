@@ -1,0 +1,20 @@
+	db 100, 105,  90,  60,  90,  80 ; 525 BST
+	;   hp  atk  def  spd  sat  sdf
+
+	db GRASS, WATER ; type
+	db 45 ; catch rate
+	db 190 ; base exp
+	db NO_ITEM ; item 1
+	db NO_ITEM ; item 2
+	dn GENDER_F50, 3 ; gender ratio, step cycles to hatch
+	INCBIN "gfx/pokemon/farcystis/front.dimensions"
+	abilities_for FARCYSTIS, WATER_ABSORB, REGENERATOR, WATER_VEIL
+	db GROWTH_SLOW ; growth rate
+	dn EGG_PLANT, EGG_WATER_2 ; egg groups
+
+	ev_yield   1,   2,   0,   0,   0,   0
+	;         hp  atk  def  spd  sat  sdf
+
+	; tm/hm learnset
+	tmhm SOUL_BIND, CURSE, HAIL, VENOSHOCK, HIDDEN_POWER, SUNNY_DAY, ICE_BEAM, BLIZZARD, HYPER_BEAM, PROTECT, RAIN_DANCE, GIGA_DRAIN, SOLAR_BEAM, RETURN, ROCK_SMASH, DOUBLE_TEAM, SLUDGE_BOMB, SUBSTITUTE, FACADE, REST, ATTRACT, ROCK_SLIDE, FOCUS_BLAST, ENERGY_BALL, SCALD, DRAIN_PUNCH, WATER_PULSE, POISON_JAB, GIGA_IMPACT, CUT, SURF, STRENGTH, WATERFALL, AQUA_TAIL, DEFENSE_CURL, DOUBLE_EDGE, ENDURE, HEADBUTT, ICE_PUNCH, ICY_WIND, KNOCK_OFF, SEED_BOMB, SEISMIC_TOSS, SLEEP_TALK, SUCKER_PUNCH, SWAGGER, THUNDERPUNCH
+	; end

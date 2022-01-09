@@ -1,0 +1,20 @@
+	db 110,  80, 115, 100,  40,  90 ; 535 BST
+	;   hp  atk  def  spd  sat  sdf
+
+	db NORMAL, NORMAL ; type
+	db 45 ; catch rate
+	db 221 ; base exp
+	db NO_ITEM ; item 1
+	db MOOMOO_MILK ; item 2
+	dn GENDER_F100, 3 ; gender ratio, step cycles to hatch
+	INCBIN "gfx/pokemon/aditank/front.dimensions"
+	abilities_for ADITANK, THICK_FAT, SCRAPPY, SAP_SIPPER
+	db GROWTH_SLOW ; growth rate
+	dn EGG_GROUND, EGG_GROUND ; egg groups
+
+	ev_yield   1,   0,   2,   0,   0,   0
+	;         hp  atk  def  spd  sat  sdf
+
+	; tm/hm learnset
+	tmhm CURSE, HIDDEN_POWER, SUNNY_DAY, ICE_BEAM, BLIZZARD, HYPER_BEAM, PROTECT, RAIN_DANCE, BULLDOZE, SOLAR_BEAM, IRON_TAIL, THUNDERBOLT, THUNDER, EARTHQUAKE, RETURN, SHADOW_BALL, ROCK_SMASH, DOUBLE_TEAM, SANDSTORM, SUBSTITUTE, FACADE, REST, ATTRACT, ROCK_SLIDE, FOCUS_BLAST, WATER_PULSE, GIGA_IMPACT, THUNDER_WAVE, GYRO_BALL, SURF, STRENGTH, BODY_SLAM, COUNTER, DEFENSE_CURL, DOUBLE_EDGE, ENDURE, FIRE_PUNCH, HEADBUTT, ICE_PUNCH, ICY_WIND, IRON_HEAD, ROLLOUT, SEISMIC_TOSS, SLEEP_TALK, SWAGGER, THUNDERPUNCH, ZEN_HEADBUTT
+	; end

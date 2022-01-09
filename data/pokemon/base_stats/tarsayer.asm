@@ -1,0 +1,20 @@
+	db  93,  51,  65,  59, 139, 103 ; 510 BST
+	;   hp  atk  def  spd  sat  sdf
+
+	db PSYCHIC, FAIRY ; type
+	db 75 ; catch rate
+	db 176 ; base exp
+	db PERSIM_BERRY ; item 1
+	db PERSIM_BERRY ; item 2
+	dn GENDER_F50, 4 ; gender ratio, step cycles to hatch
+	INCBIN "gfx/pokemon/tarsayer/front.dimensions"
+	abilities_for TARSAYER, MAGIC_GUARD, PRANKSTER, INVERTIGO
+	db GROWTH_MEDIUM_FAST ; growth rate
+	dn EGG_GROUND, EGG_FAIRY ; egg groups
+
+	ev_yield   0,   0,   0,   0,   2,   0
+	;         hp  atk  def  spd  sat  sdf
+
+	; tm/hm learnset
+	tmhm SOUL_BIND, CURSE, CALM_MIND, HIDDEN_POWER, SUNNY_DAY, HYPER_BEAM, LIGHT_SCREEN, PROTECT, RAIN_DANCE, SAFEGUARD, SOLAR_BEAM, THUNDERBOLT, RETURN, PSYCHIC, SHADOW_BALL, ROCK_SMASH, DOUBLE_TEAM, REFLECT, SWIFT, SUBSTITUTE, FACADE, REST, ATTRACT, DAZZLINGLEAM, ENERGY_BALL, DARK_PULSE, WILL_O_WISP, GIGA_IMPACT, FLASH, THUNDER_WAVE, BODY_SLAM, CHARM, DREAM_EATER, EARTH_POWER, ENDURE, FIRE_PUNCH, ICE_PUNCH, SLEEP_TALK, SWAGGER, THUNDERPUNCH, TRICK, TRICK_ROOM, ZEN_HEADBUTT
+	; end

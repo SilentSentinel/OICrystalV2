@@ -1,0 +1,20 @@
+	db  80, 115,  75,  70,  80,  80 ; 500 BST
+	;   hp  atk  def  spd  sat  sdf
+
+	db GHOST, DARK ; type
+	db 80 ; catch rate
+	db 182 ; base exp
+	db NO_ITEM ; item 1
+	db NO_ITEM ; item 2
+	dn GENDER_F50, 3 ; gender ratio, step cycles to hatch
+	INCBIN "gfx/pokemon/morterror/front.dimensions"
+	abilities_for MORTERROR, CURSED_BODY, INSOMNIA, SPITEFUL
+	db GROWTH_MEDIUM_SLOW ; growth rate
+	dn EGG_GROUND, EGG_INDETERMINATE ; egg groups
+
+	ev_yield   0,   1,   0,   0,   1,   0
+	;         hp  atk  def  spd  sat  sdf
+
+	; tm/hm learnset
+	tmhm SOUL_BIND, CURSE, HIDDEN_POWER, HONE_CLAWS, HYPER_BEAM, PROTECT, BULLDOZE, THUNDERBOLT, THUNDER, EARTHQUAKE, RETURN, SHADOW_BALL, ROCK_SMASH, DOUBLE_TEAM, SUBSTITUTE, FACADE, REST, ATTRACT, THIEF, ROCK_SLIDE, FOCUS_BLAST, FALSE_SWIPE, DARK_PULSE, WILL_O_WISP, SHADOW_CLAW, GIGA_IMPACT, STONE_EDGE, CUT, STRENGTH, BODY_SLAM, COUNTER, DOUBLE_EDGE, DREAM_EATER, ENDURE, FIRE_PUNCH, HEADBUTT, ICE_PUNCH, KNOCK_OFF, SEISMIC_TOSS, SLEEP_TALK, SUCKER_PUNCH, SWAGGER, THUNDERPUNCH, TRICK
+	; end

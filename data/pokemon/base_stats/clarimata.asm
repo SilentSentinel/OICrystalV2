@@ -1,0 +1,20 @@
+	db  90,  95,  50,  80, 120,  70 ; 505 BST
+	;   hp  atk  def  spd  sat  sdf
+
+	db PSYCHIC, FIRE ; type
+	db 60 ; catch rate
+	db 178 ; base exp
+	db ALWAYS_ITEM_2 ; item 1
+	db ASPEAR_BERRY ; item 2
+	dn GENDER_F50, 4 ; gender ratio, step cycles to hatch
+	INCBIN "gfx/pokemon/clarimata/front.dimensions"
+	abilities_for CLARIMATA, FOREWARN, OWN_TEMPO, ADAPTABILITY
+	db GROWTH_MEDIUM_FAST ; growth rate
+	dn EGG_GROUND, EGG_GROUND ; egg groups
+
+	ev_yield   0,   0,   0,   0,   2,   0
+	;         hp  atk  def  spd  sat  sdf
+
+	; tm/hm learnset
+	tmhm CURSE, ROAR, HIDDEN_POWER, SUNNY_DAY, HYPER_BEAM, LIGHT_SCREEN, PROTECT, SAFEGUARD, SOLAR_BEAM, IRON_TAIL, THUNDERBOLT, THUNDER, RETURN, DIG, PSYCHIC, SHADOW_BALL, ROCK_SMASH, DOUBLE_TEAM, REFLECT, FLASH_CANNON, FLAMETHROWER, FIRE_BLAST, SWIFT, SUBSTITUTE, FACADE, FLAME_CHARGE, REST, ATTRACT, ROCK_SLIDE, ENERGY_BALL, WILD_CHARGE, DARK_PULSE, WILL_O_WISP, GIGA_IMPACT, FLASH, THUNDER_WAVE, BODY_SLAM, DOUBLE_EDGE, DREAM_EATER, EARTH_POWER, ENDURE, HEADBUTT, SLEEP_TALK, SWAGGER, TRICK_ROOM, ZEN_HEADBUTT
+	; end

@@ -1,0 +1,20 @@
+	db  70,  45,  40,  75, 105,  70 ; 405 BST
+	;   hp  atk  def  spd  sat  sdf
+
+	db PSYCHIC, FIRE ; type
+	db 120 ; catch rate
+	db 143 ; base exp
+	db ALWAYS_ITEM_2 ; item 1
+	db ASPEAR_BERRY ; item 2
+	dn GENDER_F50, 4 ; gender ratio, step cycles to hatch
+	INCBIN "gfx/pokemon/infermata/front.dimensions"
+	abilities_for INFERMATA, FOREWARN, OWN_TEMPO, ADAPTABILITY
+	db GROWTH_MEDIUM_FAST ; growth rate
+	dn EGG_GROUND, EGG_GROUND ; egg groups
+
+	ev_yield   0,   0,   0,   0,   1,   0
+	;         hp  atk  def  spd  sat  sdf
+
+	; tm/hm learnset
+	tmhm CURSE, ROAR, HIDDEN_POWER, SUNNY_DAY, LIGHT_SCREEN, PROTECT, SAFEGUARD, SOLAR_BEAM, IRON_TAIL, THUNDERBOLT, THUNDER, RETURN, DIG, PSYCHIC, SHADOW_BALL, ROCK_SMASH, DOUBLE_TEAM, REFLECT, FLASH_CANNON, FLAMETHROWER, FIRE_BLAST, SWIFT, SUBSTITUTE, FACADE, FLAME_CHARGE, REST, ATTRACT, ENERGY_BALL, DARK_PULSE, WILL_O_WISP, FLASH, THUNDER_WAVE, BODY_SLAM, DOUBLE_EDGE, DREAM_EATER, EARTH_POWER, ENDURE, HEADBUTT, SLEEP_TALK, SWAGGER, TRICK_ROOM, ZEN_HEADBUTT
+	; end

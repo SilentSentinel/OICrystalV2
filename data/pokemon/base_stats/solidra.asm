@@ -1,0 +1,20 @@
+	db 130,  70,  90,  75, 115, 120 ; 600 BST
+	;   hp  atk  def  spd  sat  sdf
+
+	db FAIRY, DRAGON ; type
+	db 45 ; catch rate
+	db 218 ; base exp
+	db NO_ITEM ; item 1
+	db DRAGON_SCALE ; item 2
+	dn GENDER_F50, 7 ; gender ratio, step cycles to hatch
+	INCBIN "gfx/pokemon/solidra/front.dimensions"
+	abilities_for SOLIDRA, SERENE_GRACE, SOLAR_POWER, MARVEL_SCALE
+	db GROWTH_SLOW ; growth rate
+	dn EGG_FAIRY, EGG_DRAGON ; egg groups
+
+	ev_yield   2,   0,   0,   0,   0,   1
+	;         hp  atk  def  spd  sat  sdf
+
+	; tm/hm learnset
+	tmhm DRAGON_CLAW, CURSE, CALM_MIND, ROAR, HIDDEN_POWER, SUNNY_DAY, ICE_BEAM, BLIZZARD, HYPER_BEAM, LIGHT_SCREEN, PROTECT, RAIN_DANCE, SAFEGUARD, SOLAR_BEAM, THUNDERBOLT, THUNDER, EARTHQUAKE, RETURN, SHADOW_BALL, ROCK_SMASH, DOUBLE_TEAM, FLAMETHROWER, FIRE_BLAST, SWIFT, SUBSTITUTE, FACADE, REST, ATTRACT, ROCK_SLIDE, DAZZLINGLEAM, ROOST, DRAGON_PULSE, WATER_PULSE, GIGA_IMPACT, U_TURN, FLASH, FLY, STRENGTH, AQUA_TAIL, BODY_SLAM, CHARM, DOUBLE_EDGE, ENDURE, HEADBUTT, SLEEP_TALK, SWAGGER
+	; end
