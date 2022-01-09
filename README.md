@@ -2,6 +2,7 @@
 
 Current known issues:
 -Breeder Brenda near shamouti has a level 233 taegle 
+
 -Invertigo ability does not always work properly (needs more testing)
 
 
