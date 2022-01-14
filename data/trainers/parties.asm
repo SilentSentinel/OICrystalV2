@@ -7075,11 +7075,14 @@ BreederGroup:
 
 	; BREEDER
 	db "Brenda@"
-	db TRAINERTYPE_ITEM
+	db TRAINERTYPE_NORMAL
 	; party
-	db 55, CHANSEY, EVIOLITE
-	db 54, THYLERE, POISON_BARB
-	db 56, BLISSEY, LEFTOVERS
+	db 55, CHANSEY
+	db 54, THYLERE
+	db 56, BLISSEY
+	db 52, MIRAI
+	db 53, FELARE
+	db 50, SKALLOY
 	db -1 ; end
 
 ; ================

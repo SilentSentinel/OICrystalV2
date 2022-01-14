@@ -19,7 +19,7 @@ RockyBeach_MapScriptHeader:
 	object_event 11, 22, SPRITE_BEAUTY, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 1, GenericTrainerBeautyIoana, -1
 	object_event  2, 21, SPRITE_LADY, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_GENERICTRAINER, 4, GenericTrainerSightseerfKamila, -1
 	object_event 15, 18, SPRITE_AROMA_LADY, SPRITEMOVEDATA_SPINCLOCKWISE, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 3, GenericTrainerAromaLadyHeather, -1
-;	object_event 15, 13, SPRITE_BREEDER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 4, GenericTrainerBreederBrenda, -1
+	object_event 15, 13, SPRITE_BREEDER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 4, GenericTrainerBreederBrenda, -1
 	object_event 14,  7, SPRITE_SWIMMER_GUY, SPRITEMOVEDATA_SPINCOUNTERCLOCKWISE, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 2, GenericTrainerSwimmermEzra, -1
 	object_event 23, 10, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 1, RockyBeachYoungsterScript, EVENT_NOISY_FOREST_PIKABLU
 	itemball_event 21,  5, FULL_HEAL, 1, EVENT_ROCKY_BEACH_FULL_HEAL
@@ -129,32 +129,32 @@ GenericTrainerAromaLadyHeather:
 	cont "the flowers?"
 	done
 
-;GenericTrainerBreederBrenda:
-;	generictrainer BREEDER, BRENDA, EVENT_BEAT_BREEDER_BRENDA, .SeenText, .BeatenText
+GenericTrainerBreederBrenda:
+	generictrainer BREEDER, BRENDA, EVENT_BEAT_BREEDER_BRENDA, .SeenText, .BeatenText
 
-;	text "To hatch an Egg,"
-;	line "you have to walk"
-;	cont "a lot."
+	text "To hatch an Egg,"
+	line "you have to walk"
+	cont "a lot."
 
-;	para "Where better than"
-;	line "sunny Shamouti?"
-;	done
+	para "Where better than"
+	line "sunny Shamouti?"
+	done
 
-;.SeenText:
-;	text "The key to good"
-;	line "#mon breeding"
+.SeenText:
+	text "The key to good"
+	line "#mon breeding"
 
-;	para "is a good enviro-"
-;	line "nment."
+	para "is a good enviro-"
+	line "nment."
 
-;	para "There's no place"
-;	line "better than here!"
-;	done
+	para "There's no place"
+	line "better than here!"
+	done
 
-;.BeatenText:
-;	text "Your #mon are"
-;	line "well-bred."
-;	done
+.BeatenText:
+	text "Your #mon are"
+	line "well-bred."
+	done
 
 GenericTrainerSwimmermEzra:
 	generictrainer SWIMMERM, EZRA, EVENT_BEAT_SWIMMERM_EZRA, .SeenText, .BeatenText
